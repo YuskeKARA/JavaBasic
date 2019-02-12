@@ -24,9 +24,9 @@ public class PTra01_07 {
 bo=false;
 by=2;
 s=26;
-c='Y';
+c='y';
 i=50000;
-l=70;
+l=70L;
 f=3.14F;
 d=3.14;
 
