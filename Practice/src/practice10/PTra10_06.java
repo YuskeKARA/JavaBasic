@@ -21,8 +21,8 @@ public class PTra10_06 {
 		Car[] cars = new Car[3];
 
 
-		Car car1 = new Car();
-		car1.serialNo = 10000;
+		Car car1 = new Car();            //ここの部分は for (int i = 0; i < uketuskes.length; i++) {などの表記をすることはしない
+		car1.serialNo = 10000;           //なぜならこの部分は一つ一つ違うため
 		car1.color = "Red";
 		car1.gasoline = 50;
 
@@ -65,7 +65,7 @@ public class PTra10_06 {
 
 				if (sum > distance) {
 					System.out.println(cars[i].color+"目的地まで" + count + "時間かかりました。残りのガソリンは、" + cars[i].gasoline + "リットルです。");
-					break;
+					break;                  // cars[i].colorで区別したり、car i+1で番号でくべつしたり
 				}
 
 			}
