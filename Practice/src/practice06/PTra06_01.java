@@ -15,6 +15,7 @@ public class PTra06_01 {
 			// ★ 変数iを2乗した値を出力してください
 			System.out.println(i*i);
 
+
 		}
 	}
 }

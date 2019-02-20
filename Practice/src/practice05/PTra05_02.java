@@ -21,7 +21,6 @@ public class PTra05_02 {
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになって良いです
 		int input = Integer.parseInt(line);
 
-
 		/*
 		 *  ★ 以下の仕様で、switch文を記述してください
 		 *
@@ -31,11 +30,11 @@ public class PTra05_02 {
 		 *  ※##は変数inputの中身
 		 */
 		switch (input % 2) {
-			case 0:
-				System.out.println(input+"は偶数です");
-			    break;
-			case 1:
-				System.out.println(input+"は奇数です");
+		case 0:
+			System.out.println(input + "は偶数です");
+			break;
+		case 1:
+			System.out.println(input + "は奇数です");
 
 		}
 	}
