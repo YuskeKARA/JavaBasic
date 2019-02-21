@@ -2,8 +2,8 @@ package practice13.common;
 
 public class Item {
 
-	String name;                            //フィールド
-	int additionalDamage;
+	private String name;                            //フィールド
+	private int additionalDamage;
 
 	public String getName() {
 		return this.name;
@@ -22,7 +22,7 @@ public class Item {
 		this.additionalDamage = additionalDamage;
 	}
 
-	Item() {
+	public Item(String name,int additionalDamage) {    //()の中に引数
 		this.name = name;                    //コンストラクタ
 		this.additionalDamage = additionalDamage;
 	}
