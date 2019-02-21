@@ -2,14 +2,14 @@ package practice13.common;
 
 public class Item {
 
-	private String name;                            //フィールド
+	private String name; //フィールド
 	private int additionalDamage;
 
-	public String getName() {
+	public String getName() { //アクセサ
 		return this.name;
 	}
 
-	public void setName(String name) {       //アクセサ
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -22,8 +22,8 @@ public class Item {
 		this.additionalDamage = additionalDamage;
 	}
 
-	public Item(String name,int additionalDamage) {    //()の中に引数
-		this.name = name;                    //コンストラクタ
+	public Item(String name, int additionalDamage) { //コンストラクタ  ()の中に引数
+		this.name = name;
 		this.additionalDamage = additionalDamage;
 	}
 }

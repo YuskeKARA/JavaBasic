@@ -8,7 +8,7 @@ public class SuperHero extends Hero {
 		return super.attack() + equipment.getAdditionalDamage();
 	}
 
-	public void setEqupment(Item equipment) {
+	public void setEquipment(Item equipment) {
 		this.equipment = equipment;
 	}
 
