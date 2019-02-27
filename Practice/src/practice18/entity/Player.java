@@ -39,7 +39,7 @@ public class Player {                         //フィールド
 	}
 
 	public String toString() {                 //オーバーライド
-		return position + "," + name + "," + country + "" + team;     //カンマ区切り
+		return position + "," + name + "," + country + "," + team;     //カンマ区切り
 	}
 
 }

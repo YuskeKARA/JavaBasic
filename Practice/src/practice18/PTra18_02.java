@@ -41,12 +41,19 @@ public class PTra18_02 {
 		ArrayList<Player> array = new ArrayList<Player>();
 		try (Scanner scanner = new Scanner(new File("file/BestElevenCandidate.csv"))) {
 			while (scanner.hasNext()) {
-				String bbb = scanner.nextLine();
+				String line = scanner.nextLine();
 				// ★ 1行ごとにArrayListに格納してください
 				Player aaa = new Player();
-				array = scanner.split(",");
 
-				array.add(bbb);
+				String[] playerArray = line.split(","); //カンマで区切ってあるものをわける
+														// playerArrayを作って各々要素をいれる
+
+				aaa.setPosition(playerArray[0]); //aaaにそれぞれいれる
+				aaa.setName(playerArray[1]);
+				aaa.setCountry(playerArray[2]);
+				aaa.setTeam(playerArray[3]);
+
+				array.add(aaa); //arrayにaaaを代入
 			}
 		} catch (FileNotFoundException e) {
 			System.out.println("ファイルが見つかりません");
@@ -55,5 +62,6 @@ public class PTra18_02 {
 		for (int i = 0; i < array.size(); i++) {
 			System.out.println(array.get(i));
 		}
+
 	}
 }
